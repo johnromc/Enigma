@@ -4,54 +4,22 @@
   --white: #fff;
   --black: #000;
 }
+/* -----menu----- */
 
-/* ------------menuHamburgesa------------ */
+/* --slider----- */
 
-/* .menu {
-  gap: 30px;
+.slider-slides {
+  height: 600px;
 }
-.menu a {
-  width: 50%;
+.text-container .button {
+  margin: 10px auto;
+  width: 40%;
+  padding: 10px 20px;
 }
-.menu a li {
-  text-align: left;
-  margin-left: 50px;
-  position: relative;
-  font-size: 3em;
-  line-height: 1em;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
-}
-.menu li::before {
-  content: attr(data-text);
-  position: absolute;
-  color: var(--clr);
-  height: 60px;
-  width: 10%;
-  overflow: visible;
-  border-right: 8px solid var(--clr);
-  transition: 1s ease;
-}
-.menu li:hover::before {
-  width: 100%;
-  filter: drop-shadow(0 0 5px var(--clr));
-} */
 
-/* .panel-btn {
-  display: none;
-  overflow: hidden;
-} */
-.panel {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: transparent;
-}
-.menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+#convocatorias,
+#foro,
+#fresquito,
+#planes {
+  border-radius: 0;
 }
