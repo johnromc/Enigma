@@ -1,0 +1,356 @@
+:root {
+  --redColor: #d8004e;
+  --blueColor: #00dddd;
+  --white: #fff;
+  --black: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  width: 100%;
+}
+
+/*-----header----*/
+
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: var(--black);
+  color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+.logo {
+  align-content: space-between;
+}
+.logo img {
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/*-----Menu-hamburguesa--------*/
+.panel-btn {
+  position: fixed;
+  z-index: 999;
+  top: 25px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  color: var(--white);
+}
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+  background-color: var(--white);
+  width: 25px;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+  background-color: var(--white);
+  width: 20px;
+}
+
+.panel {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--black);
+  z-index: 998;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: clip-path 0.5s ease;
+}
+.panel.is-active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.menu {
+  width: inherit;
+  height: 90vh;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.menu a li {
+  list-style: none;
+}
+.menu a:active {
+  color: var(--blueColor);
+}
+
+/*------------slider------------------*/
+.slider {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.slider-slides {
+  position: relative;
+  height: 500px;
+}
+.slider-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.active {
+  visibility: visible;
+}
+
+/*--------texto slide --------*/
+.text-container {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white);
+}
+.text-container hr {
+  width: 100%;
+  margin: 20px auto;
+}
+.text-container .title {
+  font-size: 20px;
+  font-size: bold;
+  text-transform: uppercase;
+}
+.text-container .text {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.text-container .button {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--redColor);
+  border-radius: 30px;
+  padding: 5px 30px;
+  margin-top: 20px;
+}
+/*-------------slider btn-------------*/
+
+.bx {
+  width: 50px;
+  height: 100%;
+  font-size: 30px;
+  color: var(--white);
+  z-index: 997;
+  position: absolute;
+}
+.bx-chevron-left {
+  top: 50%;
+  left: 10px;
+}
+.bx-chevron-right {
+  top: 50%;
+  right: 10px;
+}
+
+/*imagenes del slide*/
+
+#convocatorias {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../resourses/home/coloridas-Ilustraciones-de-Moon-2-1024x555.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+#foro {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../resourses/home/foro.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+#fresquito {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../resourses/home/fresquito.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+#planes {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+    url(../resourses/home/sinplanes.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+
+/* ---------important------------ */
+
+.info-importat {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 10px auto;
+}
+.title-info h2 {
+  margin: 10px 0;
+  text-align: center;
+  color: var(--redColor);
+  text-transform: uppercase;
+}
+.title-info hr {
+  width: 50%;
+  margin: 10px auto;
+  border: 1px solid var(--redColor);
+}
+.title-info p {
+  text-align: center;
+  font-size: 19px;
+  margin: 10px auto;
+}
+.calendar {
+  width: 100%;
+  margin: 0 auto;
+}
+.calendar img {
+  width: 100%;
+}
+.show {
+  width: 70%;
+  margin: 0 auto;
+}
+.show a input {
+  background-color: var(--redColor);
+  color: var(--white);
+  font-weight: bold;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  border: none;
+}
+
+/* ---------convocatoria------------- */
+
+.card-container {
+  background: url(../resourses/home/poe.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  width: 90%;
+  height: 550px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 80%;
+  height: 90%;
+  margin: 20px auto;
+  color: var(--white);
+}
+.card p {
+  width: 90%;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card hr {
+  width: 60%;
+  margin-left: 40%;
+}
+.card h3 {
+  font-size: 25px;
+  text-align: right;
+}
+
+/* ------articulos mas visitados------ */
+
+.title-articles {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+.title-articles h3 {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.title-articles a {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: right;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--black);
+}
+#articles {
+  padding-top: 10px;
+}
+
+.articles-img {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+.articles-img img {
+  margin: 10px auto;
+  border-radius: 20px;
+}
+
+/*------------- planes------------- */
+
+.plans-img {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+.plans-img img {
+  width: 30%;
+  margin: 0 5px;
+  border-radius: 20px;
+}
+
+/* -------------footer------------- */
+
+footer {
+  /* display: flex; */
+  background-color: var(--black);
+  height: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+footer img {
+  width: 30%;
+  margin-left: 35%;
+  padding-top: 5px;
+}

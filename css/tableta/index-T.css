@@ -1,0 +1,48 @@
+:root {
+  --redColor: #d8004e;
+  --blueColor: #05fbfb;
+  --white: #fff;
+  --black: #000;
+}
+.logo {
+  width: 40%;
+}
+.explore {
+  transition: 0.5s ease;
+}
+.explore a {
+  border: none;
+}
+.explore a input:hover {
+  color: var(--black);
+}
+.explore input:hover {
+  color: var(--black);
+  /* transform: scale(1.1); */
+  background: #c3f5f5;
+  border-radius: 40px;
+  padding: 5px 0;
+  box-shadow: 0 0 5px #c3f5f5, 0 0 20px #c3f5f5, 0 0 60px #c3f5f5,
+    0 0 200px #c3f5f5;
+  transform: scale(1.2);
+}
+.red:hover {
+  color: var(--black);
+  /* transform: scale(1.1); */
+  background: #fa045e;
+  border-radius: 40px;
+  padding: 5px 0;
+  box-shadow: 0 0 5px #fa045e, 0 0 20px #fa045e, 0 0 60px #fa045e,
+    0 0 200px #fa045e;
+  transform: scale(1.2);
+}
+.blue:hover {
+  color: var(--black);
+  /* transform: scale(1.1); */
+  background: #05fbfb;
+  border-radius: 40px;
+  padding: 5px 0;
+  box-shadow: 0 0 5px #05fbfb, 0 0 20px #05fbfb, 0 0 60px #05fbfb,
+    0 0 200px #05fbfb;
+  transform: scale(1.2);
+}
