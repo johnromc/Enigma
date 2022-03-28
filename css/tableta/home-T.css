@@ -23,3 +23,64 @@
 #planes {
   border-radius: 0;
 }
+
+/* ---------important------------ */
+
+.convocatoria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.info-calendar {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.title-info h2 {
+  margin-top: 30px;
+  font-size: 40px;
+}
+.title-info hr {
+  width: 30%;
+}
+.calendar {
+  width: 90%;
+}
+.show {
+  width: 90%;
+}
+.card-container {
+  width: 40%;
+}
+
+/* ------articulos mas visitados------ */
+
+.plans-img,
+.articles-img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.plans-img img,
+.articles-img img {
+  width: 45%;
+  margin: 30px auto;
+}
+
+/* -------------footer------------- */
+
+footer {
+  background-color: var(--black);
+  height: 70px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+footer img {
+  width: 10%;
+  margin-left: 45%;
+  padding-top: 5px;
+}
